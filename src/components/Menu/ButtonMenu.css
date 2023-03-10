@@ -1,0 +1,28 @@
+#button_menu {
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#button_menu .action .text {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-left: 8px;
+}
+
+#button_menu .badge {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    border-radius: 100%;
+    background: #d09234;
+    color: #ffffff;
+    font-size: 12px;
+}

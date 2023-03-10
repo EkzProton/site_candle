@@ -1,0 +1,122 @@
+#home .main_section .content {
+    display: flex;
+    padding: 15px;
+    animation: blur-out-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse both;
+    background-color: rgba(150, 150, 150, 0.192);
+    border-radius: 15px;
+    border: 1px solid rgba(43, 43, 43, 0.568);
+}
+
+#home .main_section .content .brand,
+#home .main_section .content .goods {
+    display: flex;
+    flex-direction: column;
+}
+
+#home .main_section .content .brand .title {
+    font-size: 9em;
+    font-weight: bold;
+    font-family: 'Allura', cursive;
+}
+
+#home .main_section .content .brand .description {
+    text-align: justify;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: 'Old Standard TT', serif;
+}
+
+#home .main_section .content .goods {
+    align-items: center;
+    padding-left: 15px;
+}
+
+#home .main_section .content .goods .image {
+    width: 270px;
+}
+
+#home .main_section .content .goods .action {
+    padding-top: 15px;
+}
+
+#home .main_section .content .goods .action button {
+    width: 110px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    background-color: #d09234;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}
+
+#home .main_section .content .goods .action button:hover {
+    box-shadow: rgb(102 46 9) 0 8px 40px -12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+#home .main_section .content .goods .action button .arrow {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    animation: arrow-down 1500ms infinite;
+}
+
+#home .main_section .content .goods .action button .down {
+    transform: rotate(45deg);
+}
+
+@media screen and (max-width: 1201px) {
+    #home .main_section .content {
+        flex-direction: column;
+    }
+
+    #home .main_section .content .brand .title {
+        text-align: center;
+    }
+
+    #home .main_section .content .goods .image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    #home .main_section .content .brand .title {
+        font-size: 6em;
+    }
+
+    #home .main_section .content .brand .description {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@keyframes arrow-down {
+    0% {
+        transform: rotate(45deg) translate(0, 0);
+    }
+
+    50% {
+        transform: rotate(45deg) translate(3px, 3px);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+}
+
+@keyframes blur-out-expand {
+    0% {
+        filter: blur(0.01);
+    }
+
+    100% {
+        filter: blur(12px) opacity(0%);
+    }
+}

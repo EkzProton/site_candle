@@ -1,0 +1,76 @@
+#home .catalog_section {
+    align-items: center;
+}
+
+#home .catalog_section .content {
+    width: 100%;
+    display: flex;
+}
+
+#home .catalog_section .content .carousel {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#home .catalog_section .content .carousel .card {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin: 12px;
+    background-color: rgba(150, 150, 150, 0.192);
+    border-radius: 15px;
+}
+
+#home .catalog_section .content .carousel .card .data {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    background-color: rgb(112 95 66 / 86%);
+    border-radius: 0 0 8px 8px;
+    color: #f9f9f9;
+}
+
+#home .catalog_section .content .carousel .card .data .information {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 300;
+}
+
+#home .catalog_section .content .carousel .card .data .information .price {
+    font-weight: 400;
+}
+
+#home .catalog_section .content .carousel .card .data .add {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+#home .catalog_section .content .carousel .card .data .add button {
+    height: 35px;
+    padding: 5px;
+    background: none;
+    font-weight: 500;
+    color: #d09234;
+    border-radius: 8px;
+    border: 2px solid #d09234;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#home .catalog_section .content .carousel .card .data .add button:hover {
+    background: #d09234;
+    color: #ffffff;
+}
+
+
+

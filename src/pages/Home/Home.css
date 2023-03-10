@@ -1,0 +1,10 @@
+#home .main_section,
+#home .catalog_section {
+    height: 100vh;
+    display: flex;
+}
+
+#home .main_section {
+    align-items: center;
+    justify-content: center;
+}
