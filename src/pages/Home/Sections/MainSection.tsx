@@ -13,7 +13,7 @@ export const MainSection = (): JSX.Element => {
       <div className="content">
         <div className="brand">
           <div className="title">
-            Shumakova
+            OUSHA
           </div>
           <div className="description">
             Добро пожаловать в наш интернет-магазин свечей!<br/>

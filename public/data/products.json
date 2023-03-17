@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "./images/candle.png",
+    "price": 1000,
+    "composition": "Состав: COCONUT"
+  },
+  {
+    "id": 2,
+    "image": "./images/candle.png",
+    "price": 1500,
+    "composition": "Состав: Малина"
+  },
+  {
+    "id": 3,
+    "image": "./images/candle.png",
+    "price": 800,
+    "composition": "Состав: Каннабис и вишня"
+  },
+  {
+    "id": 4,
+    "image": "./images/candle.png",
+    "price": 400,
+    "composition": "Состав: Дерево"
+  },
+  {
+    "id": 5,
+    "image": "./images/candle.png",
+    "price": 2000,
+    "composition": "Состав: Хвоя и угли"
+  }
+]

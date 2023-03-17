@@ -34,21 +34,86 @@
 .Menu {
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     z-index: 4;
-    background: wheat;
+    background: #000000a8;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
+
+
+.Menu .Block {
+    width: 200%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Menu .Block .card {
+    max-width: 140px;
+    display: flex;
+    background-color: rgba(150, 150, 150, 0.192);
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.Menu .Block .card .data {
+    background-color: rgb(112 95 66 / 86%);
+    border-radius: 0 0 8px 8px;
+    color: #f9f9f9;
+}
+
+
+
+.Menu .Block .card .data {
+
+}
+
+.Menu .Block .card .data .information .deleteItem{
+    width: 115px;
+    height: 20px;
+    border-radius: 8px;
+    border: 2px solid #0c0c0c;
+}
+
+
+
+
+
+
 
 .mainMenu.active {
     visibility: visible;
     transform: translate3d(0, 0, 0);
 }
 
-.mainMenu .close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 15px;
+.mainMenu .Menu .Buttons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.mainMenu .Menu .Buttons .close {
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #d09234;
+}
+
+.mainMenu .Menu .Buttons .clear {
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 2px solid #d09234;
 }
 
 .fix_bug {
@@ -60,4 +125,6 @@
     left: 0;
     z-index: 3;
 }
+
+
 
